@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"type": "project",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+        "phpunit/phpunit": "4.8.*@dev"
 	},
 	"autoload": {
 		"classmap": [
@@ -16,7 +17,11 @@
 			"app/database/seeds",
 			"app/tests/TestCase.php",
 			"app/events"
-		]
+		],
+        "psr-4": {
+            "LaravelRealtimeChat\\": "app/LaravelRealtimeChat"
+        }
+
 	},
 	"scripts": {
 		"post-install-cmd": [
